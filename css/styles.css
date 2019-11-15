@@ -7,35 +7,44 @@ h1 {
   color: white;
 }
 
-#play:target {
-  animation: smile 2s steps(4, end) forwards;
-}
-
 .yeti {
   display: block;
   margin: auto;
   height: 490px;
   width: 450px;
-  background: url('https://i.ibb.co/zVch8Zb/yeti-Animation.png') left center;
+  background: url('https://i.ibb.co/GtjvbPz/yetiFull.png') no-repeat left center;
+}
+
+.yeti:hover {
+  animation: smile .1s steps(3) forwards;
+}
+
+.yeti:active {
+  animation: hit .1s steps(3) forwards;
 }
 
 @keyframes smile {
-  from {background-position: 0px;}
-  to {background-position: -1800px;}
+  from  {background-position: 0px;}
+  to {background-position: -1350px;}
 }
 
-a {
+@keyframes hit {
+  from  {background-position: -1800px;}
+  to {background-position: -3150px;}
+}
+/* a {
   text-decoration: none;
   font-family: sans-serif;
   color: white;
   background: #3D5F94;
   border-radius: .35em;
   border-bottom: solid 3px rgba(0,0,0,.2);
-  margin: 10px auto;
-  width: max-content;
+  width: 120px;
+  text-align: center;
   padding: 10px 10px;
-  display: block;
+  display: inline-block;
+  cursor: pointer;
 }
 a:hover {
-  background: firebrick;
-}
+  background: #5D91D8;
+} */
